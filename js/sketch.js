@@ -42,7 +42,7 @@ function setup() {
 }
 
 function draw() {
-  background(50)
+  background('#f7f7f7')
   ellipseMode(CENTER)
   var frequency = freq_slider.value() / 5000
   var amplitude = amplitude_slider.value() / 100

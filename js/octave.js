@@ -25,24 +25,20 @@ function setup() {
   amplitude_slider = createSlider(0, 500, 100)
   amplitude_slider.position(canvasWidth + 20, 115)
 
-  p = createP('Octaves')
-  p.position(canvasWidth + 20, 140)
-  p.style('display', 'none')
-
-  octave_slider = createSlider(10, 80, 30)
-  octave_slider.position(canvasWidth + 20, 175)
-  octave_slider.style('display', 'none')
-
   p = createP('time')
   p.position(canvasWidth + 20, 140)
-  // p.style('display', 'none')
 
   time_slider = createSlider(0, 1000, 0)
   time_slider.position(canvasWidth + 20, 175)
-  // time_slider.style('display', 'none')
+
+  p = createP('Octaves')
+  p.position(canvasWidth + 20, 210)
+
+  octave_slider = createSlider(10, 80, 30)
+  octave_slider.position(canvasWidth + 20, 245)
 
   animate_checkbox = createCheckbox('Animate Noise', false)
-  animate_checkbox.position(canvasWidth + 20, 210)
+  animate_checkbox.position(canvasWidth + 20, 280)
   // animate_checkbox.style('display', 'none')
 }
 
